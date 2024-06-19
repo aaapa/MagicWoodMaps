@@ -1,0 +1,180 @@
+.comments {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+.comments__body {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comments__info {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.comments__info-header {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.comments__title {
+  max-width: 400px;
+  line-height: 136%
+}
+
+.comments__footer {
+  display: flex;
+  gap: 50px;
+  align-items: start;
+  flex-direction: column;
+}
+
+.comments__desc {
+  max-width: 480px;
+  color: #585858;
+  line-height: 180%;
+  font-size: clamp(0.875rem, 5vw, 1.5rem);
+}
+
+.comments__slider {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  max-width: 710px;
+  align-items: end;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.comments__slider-menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.comments__button {
+  display: flex;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 1.7rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  border-radius: 50%;
+  background-color: white;
+}
+
+.comments__button.swiper-button-disabled {
+  opacity: 0.4;
+}
+
+@media (hover:hover) {
+  .comments__button:not(.swiper-button-disabled):hover {
+    color: whitesmoke;
+    background-color: var(--accent);
+  }
+}
+
+.comments__button:not(.swiper-button-disabled):active {
+  scale: var(--scale);
+}
+
+.comments__slider-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.comments__slider-slide {
+  width: fit-content !important;
+  display: flex;
+  align-items: center;
+}
+
+.comments__card {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 330px;
+  flex-direction: column;
+}
+
+.comments__card-header {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.comments__card-image {
+  width: 330px;
+  height: 305px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.comments__card-title {
+  color: black;
+  font-weight: 600;
+  line-height: 177.9%;
+  font-size: clamp(1.25rem, 5vw, 1.4375rem);
+}
+
+.comments__card-footer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.comments__card-text {
+  max-width: 330px;
+  line-height: 210%;
+  color: #424242;
+}
+
+.comments__card-author {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.comments__card-author-image {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comments__card-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__card-author-name {
+  color: black;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.comments__card-date-created {
+  color: #7B7B7B;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 992px) {
+  .comments__body {
+    flex-direction: column;
+  }
+
+  .comments__slider {
+    position: static;
+  }
+}

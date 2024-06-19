@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  gap: 20px;
+  min-height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  flex-wrap: wrap;
+}
+
+.button.long {
+  padding: 20px;
+}
+
+.button.short {
+  padding: 12px 20px;
+}
+
+.button.accent {
+  color: white;
+  font-size: clamp(0.875rem, 5vw, 1.5rem);
+  background-color: var(--accent);
+}
+
+@media (hover:hover) {
+  .button.accent:hover {
+    background-color: var(--black);
+  }
+}
+
+.button.transparent {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+@media (hover:hover) {
+  .button.transparent:hover {
+    color: white;
+    background-color: var(--accent);
+  }
+}
+
+.button:active {
+  scale: var(--scale);
+}

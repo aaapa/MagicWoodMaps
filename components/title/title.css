@@ -1,0 +1,33 @@
+.title {
+  font-weight: 600;
+}
+
+.title.big {
+  font-size: clamp(1.5rem, 5vw, 3.75rem);
+}
+
+.title.medium {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.title.small {
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.title.decor {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--accent);
+  text-transform: lowercase;
+}
+
+.title.decor::before {
+  content: "";
+  width: 33px;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--accent);
+}

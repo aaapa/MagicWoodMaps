@@ -1,0 +1,84 @@
+@import url("fonts.css");
+@import url("modern-normalize.css");
+
+/* components */
+
+@import url("../../components/header/header.css");
+@import url("../../components/title/title.css");
+@import url("../../components/button/button.css");
+@import url("../../components/rating/rating.css");
+@import url("../../components/footer/footer.css");
+
+/* components */
+
+
+/* blocks */
+
+@import url("../../blocks/offer/offer.css");
+@import url("../../blocks/benefits/benefits.css");
+@import url("../../blocks/solutions/solutions.css");
+@import url("../../blocks/categories/categories.css");
+@import url("../../blocks/comments/comments.css");
+@import url("../../blocks/bestseller/bestseller.css");
+@import url("../../blocks/newsletter/newsletter.css");
+@import url("../../blocks/video-info/video-info.css");
+
+/* blocks */
+
+/* icon-font */
+
+@import url("../icon-font/font-awesome/all.min.css");
+
+/* icon-font */
+
+
+/* libraries */
+
+@import url("../libraries/simplebar/simplebar.css");
+@import url("../libraries/swiper/swiper-bundle.min.css");
+
+/* libraries */
+
+
+:root {
+  --opacity: 0.7;
+  --scale: 0.9;
+  --black: #1F1F1F;
+  --orange: #ED553B;
+  --accent: var(--orange);
+  --padding: 20px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #F1F3F6;
+}
+
+.container {
+  width: 100%;
+  margin: 0px auto;
+  max-width: 1525px;
+}
+
+.fullscreen {
+  min-height: 100dvh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
