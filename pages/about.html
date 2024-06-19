@@ -8,7 +8,7 @@
  </head>
  <body>
   <div class="wrapper">
-   <header class="header">
+   <header class="header" hidden>
       <div class="header__body">
        <div class="header__contacts">
         <div class="header__contacts-body container">
@@ -190,9 +190,65 @@
       </div>
    </header>
    <main class="main">
-
+    <section class="about">
+     <div class="about__body container">
+      <header class="about__header">
+       <div class="about__header-content">
+        <h2 class="title big">Magic Wood Maps</h2>
+        <span class="about__desc">
+          Различные виды карт из натурального дерева
+          и приложений для них, чтобы отвечать
+          потребностям наших клиентов. Чтобы наш декор
+          был лучшим, мы сотрудничаем с лучшими
+          производителями сырья и красок в отрасли
+        </span>
+       </div>
+      </header>
+      <footer class="about__footer">
+       <div class="about__contacts">
+        <span class="about__contacts-text">Подписывайся на нас</span>
+        <nav class="about__contacts-nav">
+         <ul class="about__contacts-list">
+          <li>
+           <a class="about__contacts-link" href="#!" aria-label="facebook" data-tippy-content="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+           </a>
+          </li>
+          <li>
+           <a class="about__contacts-link" href="#!" aria-label="instagram" data-tippy-content="instagram">
+            <i class="fa-brands fa-instagram"></i>
+           </a>
+          </li>
+          <li>
+           <a class="about__contacts-link" href="#!" aria-label="twitter" data-tippy-content="twitter">
+            <i class="fa-brands fa-twitter"></i>
+           </a>
+          </li>
+          <li>
+           <a class="about__contacts-link" href="#!" aria-label="linkedin-in" data-tippy-content="linkedin-in">
+            <i class="fa-brands fa-linkedin-in"></i>
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+       <div class="about__row">
+        <i class="about__icon fa-solid fa-phone-volume"></i>
+        <a class="about__link" href="tel:+700000000">
+         <span>+7 000 000 00-00</span>
+        </a>
+       </div>
+       <div class="about__row">
+        <i class="about__icon fa-solid fa-location-dot"></i>
+        <a class="about__link" href="#!">
+         <span>г. Львов, <br> ул. Шевченко, 31а</span>
+        </a>
+       </div>
+      </footer>
+     </div>
+    </section>
    </main>
-   <footer class="footer">
+   <footer class="footer" hidden>
     <div class="footer__body container">
      <div class="footer__newsletter">
       <div class="footer__newsletter-top">
@@ -272,5 +328,6 @@
   <script src="../src/libraries/tippy/popper.js"></script>
   <script src="../src/libraries/tippy/tippy.js"></script>
   <script src="../src/icon-font/font-awesome/all.min.js"></script>
+  <script type="module" src="../src/main.js"></script>
  </body>
 </html>

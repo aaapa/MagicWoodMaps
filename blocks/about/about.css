@@ -1,0 +1,147 @@
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding);
+}
+
+.about__body {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__header {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__header::after {
+  content: "";
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  display: inline-block;
+  background: url("../../src/imgs/about/map.svg") center / cover no-repeat;
+}
+
+.about__header-content {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+
+.about__desc {
+  color: #8F8F8F;
+  max-width: 645px;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: clamp(0.875rem, 5vw, 1.25rem);
+}
+
+.about__footer {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__contacts {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.about__contacts-text {
+  color: var(--black);
+}
+
+.about__contacts-nav {
+  display: flex;
+  align-items: center;
+}
+
+.about__contacts-list {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about__contacts-link {
+  display: flex;
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  align-items: center;
+  color: var(--accent);
+  justify-content: center;
+  background-color: white;
+  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15));
+}
+
+@media (hover:hover) {
+  .about__contacts-link:hover {
+    color: white;
+    background-color: var(--accent);
+  }
+}
+
+.about__contacts-link:active {
+  scale: var(--scale);
+}
+
+.about__row {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about__icon {
+  color: var(--accent);
+  font-size: clamp(0.875rem, 5vw, 1.25rem);
+}
+
+.about__link {
+  color: #333;
+  font-size: clamp(0.875rem, 5vw, 1.25rem);
+}
+
+@media (hover:hover) {
+  .about__link:hover {
+    text-decoration: underline;
+    background-color: color-mix(in srgb, var(--accent), transparent 90%);
+  }
+}
+
+.about__link:active {
+  scale: var(--scale);
+}
+
+@media (max-width: 992px) {
+  .about__header::after {
+    width: 400px;
+    height: 275px;
+  }
+
+  .about__desc {
+    color: #585858;
+  }
+
+  .about__link {
+    color: var(--black);
+  }
+}

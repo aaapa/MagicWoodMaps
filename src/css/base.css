@@ -8,6 +8,7 @@
 @import url("../../components/button/button.css");
 @import url("../../components/rating/rating.css");
 @import url("../../components/footer/footer.css");
+@import url("../../components/current-page/current-page.css");
 
 /* components */
 
@@ -22,6 +23,7 @@
 @import url("../../blocks/bestseller/bestseller.css");
 @import url("../../blocks/newsletter/newsletter.css");
 @import url("../../blocks/video-info/video-info.css");
+@import url("../../blocks/about/about.css");
 
 /* blocks */
 
