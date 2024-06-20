@@ -8,7 +8,7 @@
  </head>
  <body>
   <div class="wrapper">
-   <header class="header" hidden>
+   <header class="header">
       <div class="header__body">
        <div class="header__contacts">
         <div class="header__contacts-body container">
@@ -104,14 +104,14 @@
          <nav class="header__bottom-nav header__nav" data-da=".header__menu-content-top, 992, 1">
           <ul class="header__list">
            <li class="header__list-item">
-            <span class="header__link active">
+            <a class="header__link" href="../index.html">
              <span>Главная</span>
-            </span>
+            </a>
            </li>
            <li class="header__list-item">
-            <a class="header__link" href="#!">
+            <span class="header__link active">
              <span>О нас</span>
-            </a>
+            </span>
            </li>
            <li class="header__list-item">
             <a class="header__link" href="#!">
@@ -190,6 +190,25 @@
       </div>
    </header>
    <main class="main">
+    <section class="current-page">
+     <div class="current-page__body container">
+      <div class="current-page__content">
+       <h1 class="title medium">О нас</h1>
+       <div class="current-page__breadcrumbs">
+        <nav class="current-page__breadcrumbs-nav">
+         <ul class="current-page__breadcrumbs-list">
+          <li>
+           <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
+          </li>
+          <li>
+           <span class="current-page__breadcrumbs-link active">О нас</span>
+          </li>
+         </ul>
+        </nav>        
+       </div>
+      </div>
+     </div>
+    </section>
     <section class="about">
      <div class="about__body container">
       <header class="about__header">
@@ -248,7 +267,7 @@
      </div>
     </section>
    </main>
-   <footer class="footer" hidden>
+   <footer class="footer">
     <div class="footer__body container">
      <div class="footer__newsletter">
       <div class="footer__newsletter-top">
@@ -288,7 +307,7 @@
      <nav class="footer__nav">
       <ul class="footer__list" data-footer-list-name="Меню">
        <li><a class="footer__link" href="index.html">Главная</a></li>
-       <li><a class="footer__link" href="#!">О нас</a></li>
+       <li><span class="footer__link active">О нас</span></li>
        <li><a class="footer__link" href="#!">Контакты</a></li>
        <li><a class="footer__link" href="#!">Блог</a></li>
       </ul>

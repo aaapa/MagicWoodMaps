@@ -175,15 +175,19 @@
 }
 
 @media (hover:hover) {
-  .footer__link:hover {
+  .footer__link:not(.footer__link.active):hover {
     color: #794949;
     text-decoration: underline;
     background-color: #ffa29236;
   }
 }
 
-.footer__link:active {
+.footer__link:not(.footer__link.active):active {
   scale: var(--scale);
+}
+
+.footer__link.active {
+  color: var(--accent);
 }
 
 .footer__list-column {
