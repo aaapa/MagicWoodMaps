@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MaginWoodMaps - о нас</title>
  </head>
- <body>
+ <body data-simplebar>
   <div class="wrapper">
    <header class="header">
       <div class="header__body">
@@ -209,7 +209,7 @@
       </div>
      </div>
     </section>
-    <section class="about">
+    <section class="about fullscreen">
      <div class="about__body container">
       <header class="about__header">
        <div class="about__header-content">
@@ -263,6 +263,41 @@
          <span>г. Львов, <br> ул. Шевченко, 31а</span>
         </a>
        </div>
+      </footer>
+     </div>
+    </section>
+    <section class="feedback">
+     <div class="feedback__body container">
+      <header class="feedback__header">
+       <h2 class="feedback__title">Обратный звонок</h2>
+       <span class="feedback__desc">Оставьте контакты и мы предвзоним вам в ближайшее время</span>
+      </header>
+      <footer class="feedback__footer">
+       <form class="feedback__form">
+        <div class="feedback__form-main">
+         <div class="feedback__form-row">
+          <div class="feedback__input-wrapper">
+           <label class="feedback__input-label">Имя*</label>
+           <input class="feedback__input" inputmode="text" type="text" placeholder="Имя" required>
+          </div>
+          <div class="feedback__input-wrapper">
+           <label class="feedback__input-label">Номер телефона*</label>
+           <input class="feedback__input" inputmode="tel" type="tel" placeholder="Номер телефона" required>
+          </div>        
+         </div>
+         <div class="feedback__input-wrapper">
+          <label class="feedback__input-label">Электронная почта</label>
+          <input class="feedback__input" inputmode="email" type="email" placeholder="Электронная почта">
+         </div>
+         <div class="feedback__input-wrapper">
+          <label class="feedback__input-label">Сообщение</label>
+          <textarea class="feedback__textarea feedback__input" placeholder="Сообщение"></textarea>
+         </div>
+        </div>
+        <button class="feedback__button button accent" type="submit">
+         <span>Отправить</span>
+        </button>
+       </form>
       </footer>
      </div>
     </section>
