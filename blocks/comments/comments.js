@@ -33,8 +33,6 @@ export const comments = () => {
       prevEl: ".comments__button.prev"
     },
     spaceBetween: 50,
-    slidesPerView: 2,
-    slidesPerGroup: 2,
     cssMode: true,
   });
 };
