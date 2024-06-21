@@ -33,6 +33,5 @@ export const comments = () => {
       prevEl: ".comments__button.prev"
     },
     spaceBetween: 50,
-    cssMode: true,
   });
 };
