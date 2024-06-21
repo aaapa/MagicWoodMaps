@@ -4,8 +4,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #FAFAFA;
   padding: 50px var(--padding) 50px var(--padding);
+  background-color: #FAFAFA;
 }
 
 .feedback__body {
