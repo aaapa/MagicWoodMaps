@@ -33,9 +33,19 @@ export const comments = () => {
         nextEl: ".comments__button.next",
         prevEl: ".comments__button.prev"
       },
-      spaceBetween: 50,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+
+      breakpoints: {
+        320: {
+          spaceBetween: 32,
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+        480: {
+          spaceBetween: 50,
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        }
+      }
     });
   };
 };

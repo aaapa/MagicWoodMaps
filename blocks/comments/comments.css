@@ -95,7 +95,7 @@
 }
 
 .comments__slider-slide {
-  width: fit-content !important;
+  /* width: fit-content !important; */
   display: flex;
   align-items: center;
 }
