@@ -1,9 +1,10 @@
 export const offer = () => {
-  let offerSlider = new Swiper(".offer__slider", {
-  
-    pagination: {
-      el: ".offer__pagination",
-      clickable: true,
-    },
-  });
+  if (document.querySelector(".offer__slider")) {
+    new Swiper(".offer__slider", {
+      pagination: {
+        el: ".offer__pagination",
+        clickable: true,
+      },
+    });
+  }
 };

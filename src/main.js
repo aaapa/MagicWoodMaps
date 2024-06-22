@@ -13,6 +13,9 @@ comments();
 import { bestseller } from "../blocks/bestseller/bestseller.js";
 bestseller();
 
+import { news } from "../blocks/news/news.js";
+news();
+
 import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();
 

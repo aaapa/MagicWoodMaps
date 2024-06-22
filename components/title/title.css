@@ -31,3 +31,20 @@
   display: inline-block;
   background-color: var(--accent);
 }
+
+
+.title.lines {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.title.lines::before,
+.title.lines::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background-color: #E0E0E0;
+}

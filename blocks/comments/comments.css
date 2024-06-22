@@ -155,6 +155,7 @@
 
 .comments__card-author-info {
   display: flex;
+  gap: 10px;
   flex-direction: column;
 }
 
