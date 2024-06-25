@@ -4,11 +4,11 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="../src/css/base.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MaginWoodMaps - блог</title>
+   <title>MaginWoodMaps - товары категории</title>
   </head>
   <body data-simplebar>
    <div class="wrapper">
-    <header class="header">
+    <header class="header" hidden>
       <div class="header__body">
        <div class="header__contacts">
         <div class="header__contacts-body container">
@@ -124,9 +124,9 @@
             </a>
            </li>
            <li class="header__list-item">
-            <a class="header__link" href="catalog.html">
+            <span class="header__link active">
              <span>Каталог</span>
-            </a>
+            </span>
            </li>
           </ul>
          </nav>
@@ -190,10 +190,10 @@
       </div>
    </header>
     <main class="main">
-     <section class="current-page">
+     <section class="current-page" hidden>
         <div class="current-page__body container">
          <div class="current-page__content">
-          <h1 class="title medium">Страница новости</h1>
+          <h1 class="title medium">Однослойные карты</h1>
           <div class="current-page__breadcrumbs">
            <nav class="current-page__breadcrumbs-nav">
             <ul class="current-page__breadcrumbs-list">
@@ -201,7 +201,10 @@
               <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
              </li>
              <li>
-              <span class="current-page__breadcrumbs-link active">Блог</span>
+              <a class="current-page__breadcrumbs-link" href="catalog.html">Категории</a>
+             </li>
+             <li>
+              <span class="current-page__breadcrumbs-link active">Однослойные карты</span>
              </li>
             </ul>
            </nav>        
@@ -209,186 +212,75 @@
          </div>
         </div>
      </section>
-     <section class="news-block">
-      <div class="news-block__body container">
-       <article class="news-block__article">
-        <header class="news-block__article-header">
-         <img class="news-block__article-image" src="https://i.ibb.co/TbJnxRz/comments-1.webp" alt="">
-         <div class="news-block__article-info">
-          <a class="news-block__article-info-link" href="#!">
-           <i class="news-block__article-info-icon fa-solid fa-user"></i>
-           <span>Админ</span>
-          </a>
-         <div class="news-block__article-info-row">
-          <i class="news-block__article-info-icon fa-solid fa-calendar-days"></i>
-          <time datetime="2024-06-22">2024-06-22</time>
-         </div>
-        </header>
-        <div class="news-block__main">
-         <div class="news-block__text">
-          <h2 class="news-block__title">Однослойная карта и ее использование</h2>
-          <div class="news-block__text-block">
-           <span>
-            Далеко-далеко за словесными горами
-            в стране гласных и согласных живут рыбные
-            тексты. Свое большого пустился страна агентство
-            моей дорогу повстречался возвращайся маленький
-            обеспечивает, взгляд наш. Журчит, толку снова?
-            Домах составитель текстами лучше, свое рот буквоград
-            однажды запятой! Не злых выйти снова сих.
-           </span>
-           <span>
-            Далеко-далеко за словесными горами
-            в стране гласных и согласных живут рыбные
-            тексты. Свое большого пустился страна агентство
-            моей дорогу повстречался возвращайся маленький
-            обеспечивает, взгляд наш. Журчит, толку снова?
-            Домах составитель текстами лучше, свое рот буквоград
-            однажды запятой! Не злых выйти снова сих.
-            Далеко-далеко за словесными горами
-            в стране гласных и согласных живут рыбные
-            тексты. Свое большого пустился страна агентство
-            моей дорогу повстречался возвращайся маленький
-            обеспечивает, взгляд наш. Журчит, толку снова?
-            Домах составитель текстами лучше, свое рот буквоград
-            однажды запятой! Не злых выйти снова сих.
-            Далеко-далеко за словесными горами
-            в стране гласных и согласных живут рыбные
-            тексты. Свое большого пустился страна агентство
-            моей дорогу повстречался возвращайся маленький
-            обеспечивает, взгляд наш. Журчит, толку снова?
-            Домах составитель текстами лучше, свое рот буквоград
-            однажды запятой! Не злых выйти снова сих.
-           </span>            
-          </div>
-          <blockquote class="news-block__blockquote">
-           Далеко-далеко за словесными горами
-           в стране гласных и согласных живут рыбные
-           тексты. Свое большого пустился страна агентство
-           моей дорогу повстречался возвращайся маленький
-           обеспечивает, взгляд наш. Журчит, толку снова?
-          </blockquote>
-          <div class="news-block__items">
-           <div class="news-block__video">
-            <button class="news-block__video-button" aria-label="Включить видео (его нет)" data-tippy-content="Включить видео (его нет)">
-             <i class="fa-solid fa-play"></i>
-            </button>
-            <img class="news-block__video-image-preview" src="../src/imgs/news-block/news-block--1.webp" alt="">
-           </div>
-           <img class="news-block__image" src="../src/imgs/news-block/news-block--1.webp" alt="">
-          </div>
-          <div class="news-block__text-block">
-           <span>
-            Далеко-далеко за словесными горами
-            в стране гласных и согласных живут рыбные
-            тексты. Свое большого пустился страна агентство
-            моей дорогу повстречался возвращайся маленький
-            обеспечивает, взгляд наш. Журчит, толку снова?
-            Домах составитель текстами лучше, свое рот буквоград
-            однажды запятой! Не злых выйти снова сих.
-           </span>            
-          </div>
-         </div>
-         <div class="news-block__socials">
-          <nav class="news-block__socials-nav">
-           <ul class="news-block__socials-list">
-            <li>
-             <a class="news-block__socials-link facebook" href="#!" aria-label="facebook" data-tippy-content="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-             </a>
-            </li>
-            <li>
-             <a class="news-block__socials-link instagram" href="#!" aria-label="instagram" data-tippy-content="instagram">
-              <i class="fa-brands fa-instagram"></i>
-             </a>
-            </li>
-            <li>
-             <a class="news-block__socials-link twitter" href="#!" aria-label="twitter" data-tippy-content="twitter">
-              <i class="fa-brands fa-twitter"></i>
-             </a>
-            </li>
-           </ul>
-          </nav>
+     <section class="product-category">
+      <div class="product-category__body container">
+       <header class="product-category__header">
+        <div class="product-category__header-column">
+         <h2 class="title medium">Однослойные карты</h2>
+         <div class="product-category__total-cards">
+          <span>Всего позиций: 6</span>
          </div>
         </div>
-       </article>
-       <div class="news-block__other-news">
-        <div class="news-block__other-news-wrapper">
-         <h6 class="news-block__other-news-title">Последние записи</h6>
-         <ul class="news-block__other-news-list">
-          <li>
-           <article class="news-block__other-news-card">
-            <img class="news-block__other-news-card-image" src="../src/imgs/news-block/news-block--1.webp" alt="">
-            <div class="news-block__other-news-card-info">
-             <h6 class="news-block__other-news-card-title">Это давно установленный факт</h6>
-             <time class="news-block__other-news-card-date" datetime="2024-06-22">2024-06-22</time>
-            </div>
-            <a class="news-block__other-news-card-link" href="#!"></a>
-           </article>
-          </li>
-          <li>
-           <article class="news-block__other-news-card">
-            <img class="news-block__other-news-card-image" src="../src/imgs/news-block/news-block--1.webp" alt="">
-            <div class="news-block__other-news-card-info">
-             <h6 class="news-block__other-news-card-title">Это давно установленный факт</h6>
-             <time class="news-block__other-news-card-date" datetime="2024-06-22">2024-06-22</time>
-            </div>
-            <a class="news-block__other-news-card-link" href="#!"></a>
-           </article>
-          </li>
-         </ul>          
+        <div class="product-category__sorting">
+         <span class="product-category__sorting-text">Сортировать по:</span>
+         <div class="product-category__sorting-select">
+          <button class="product-category__sorting-selected-item" type="button">
+           <span>Карта</span>
+           <i class="product-category__sorting-icon fa-solid fa-chevron-down"></i>
+          </button>
+         </div>
         </div>
-        <div class="news-block__other-news-wrapper">
-          <h6 class="news-block__other-news-title">Товары в продаже</h6>
-          <ul class="news-block__other-news-list">
-           <li>
-            <article class="news-block__other-news-card">
-             <img class="news-block__other-news-card-image" src="../src/imgs/news-block/news-block--1.webp" alt="">
-             <div class="news-block__other-news-card-info">
-              <h6 class="news-block__other-news-card-title">Это давно установленный факт</h6>
-              <time class="news-block__other-news-card-date" datetime="2024-06-22">2024-06-22</time>
-             </div>
-             <a class="news-block__other-news-card-link" href="#!"></a>
-            </article>
-           </li>
-           <li>
-            <article class="news-block__other-news-card">
-             <img class="news-block__other-news-card-image" src="../src/imgs/news-block/news-block--1.webp" alt="">
-             <div class="news-block__other-news-card-info">
-              <h6 class="news-block__other-news-card-title">Это давно установленный факт</h6>
-              <time class="news-block__other-news-card-date" datetime="2024-06-22">2024-06-22</time>
-             </div>
-             <a class="news-block__other-news-card-link" href="#!"></a>
-            </article>
-           </li>
-          </ul>          
+       </header>
+       <div class="product-category__main">
+        <div class="product-category__params">
+         <fieldset class="product-category__fieldset">
+          <legend class="product-category__params-title">Карты</legend>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+         </fieldset>
+         <fieldset class="product-category__fieldset">
+          <legend class="product-category__params-title">Карты</legend>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+           <label class="product-category__param">
+            <input class="product-category__checkbox" type="checkbox">
+            <span>Однослойные карты</span>
+           </label>
+         </fieldset>
         </div>
-        <div class="news-block__socials">
-         <h5 class="news-block__socials-title">Подписывайся</h5>
-         <nav class="news-block__socials-nav">
-          <ul class="news-block__socials-list">
-           <li>
-            <a class="news-block__socials-link facebook" href="#!" aria-label="facebook" data-tippy-content="facebook">
-             <i class="fa-brands fa-facebook-f"></i>
-            </a>
-           </li>
-           <li>
-            <a class="news-block__socials-link instagram" href="#!" aria-label="instagram" data-tippy-content="instagram">
-             <i class="fa-brands fa-instagram"></i>
-            </a>
-           </li>
-           <li>
-            <a class="news-block__socials-link twitter" href="#!" aria-label="twitter" data-tippy-content="twitter">
-             <i class="fa-brands fa-twitter"></i>
-            </a>
-           </li>
-          </ul>
-         </nav>
+        <div class="product-category__slider swiper">
+         <div class="product-category__slider-wrapper slider-wrapper">
+         </div>
+         <div class="product-category__pagination"></div>
         </div>
        </div>
       </div>
      </section>
-     <section class="feedback">
+     <section class="feedback" hidden>
       <div class="feedback__body container">
        <header class="feedback__header">
         <h2 class="feedback__title">Обратный звонок</h2>
@@ -424,7 +316,7 @@
       </div>
      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" hidden>
       <div class="footer__body container">
        <div class="footer__newsletter">
         <div class="footer__newsletter-top">
@@ -503,6 +395,7 @@
    <script src="../src/libraries/simplebar/simplebar.min.js"></script>
    <script src="../src/libraries/tippy/popper.js"></script>
    <script src="../src/libraries/tippy/tippy.js"></script>
+   <script src="../src/libraries/swiper/swiper-bundle.min.js"></script>
    <script src="../src/icon-font/font-awesome/all.min.js"></script>
    <script type="module" src="../src/main.js"></script>
   </body>

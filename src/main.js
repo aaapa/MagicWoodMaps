@@ -16,6 +16,9 @@ bestseller();
 import { news } from "../blocks/news/news.js";
 news();
 
+import { productCategory } from "../blocks/product-category/product-category.js";
+productCategory();
+
 import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();
 
