@@ -23,7 +23,7 @@ export const productCategory = () => {
             </span>
             <menu class="product-category__card-menu">
               <li>
-                <a class="product-category__card-button button transparent" href="#!">
+                <a class="product-category__card-button button transparent" href="${card.link}">
                   <span>Купить в 1 клик</span>
                 </a>
               </li>
@@ -64,11 +64,15 @@ export const productCategory = () => {
     totalCardsElement.innerHTML = foundHTML;
 
     new Swiper(".product-category__slider", {
+      navigation: {
+        nextEl: ".product-category__slider-button.next",
+        prevEl: ".product-category__slider-button.prev",
+      },
       pagination: {
         el: ".product-category__pagination",
         clickable: true,
         renderBullet: function (index, className) {
-          return `<span class="${className}">${index + 1}</span>`;
+          return `<button class="${className}" type="button">${index + 1}</button>`;
         },
       },
     });

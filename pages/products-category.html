@@ -8,7 +8,7 @@
   </head>
   <body data-simplebar>
    <div class="wrapper">
-    <header class="header" hidden>
+    <header class="header">
       <div class="header__body">
        <div class="header__contacts">
         <div class="header__contacts-body container">
@@ -190,7 +190,7 @@
       </div>
    </header>
     <main class="main">
-     <section class="current-page" hidden>
+     <section class="current-page">
         <div class="current-page__body container">
          <div class="current-page__content">
           <h1 class="title medium">Однослойные карты</h1>
@@ -273,14 +273,22 @@
          </fieldset>
         </div>
         <div class="product-category__slider swiper">
-         <div class="product-category__slider-wrapper slider-wrapper">
+         <div class="product-category__slider-wrapper swiper-wrapper">
          </div>
-         <div class="product-category__pagination"></div>
+         <div class="product-category__menu">
+          <button class="product-category__slider-button prev" type="button" aria-label="Предыдущие товары" data-tippy-content="Предыдущие товары">
+           <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="product-category__pagination"></div>
+          <button class="product-category__slider-button next" type="button" aria-label="Следующие товары" data-tippy-content="Следующие товары">
+           <i class="fa-solid fa-chevron-right"></i>
+          </button>
+         </div>
         </div>
        </div>
       </div>
      </section>
-     <section class="feedback" hidden>
+     <section class="feedback">
       <div class="feedback__body container">
        <header class="feedback__header">
         <h2 class="feedback__title">Обратный звонок</h2>
@@ -316,7 +324,7 @@
       </div>
      </section>
     </main>
-    <footer class="footer" hidden>
+    <footer class="footer">
       <div class="footer__body container">
        <div class="footer__newsletter">
         <div class="footer__newsletter-top">
