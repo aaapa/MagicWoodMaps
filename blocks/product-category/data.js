@@ -10,13 +10,13 @@ export const data = {
        рыбные тексты. Лучше, алфавит? Вершину 
        продолжил власти снова если вопрос запятой залетают.
       `,
-      link: "#!",
+      link: "product.html",
       price: {
         old: 3000,
         regular: 3000,
         discount: 2000,
       },
-      rating: `<div class="rating" data-rating-stars="5, 1"></div>`,
+      rating: `<div class="product-category__rating rating" data-rating-stars="5, 1"></div>`,
     },
     {
       image: "https://i.ibb.co/TbJnxRz/comments-1.webp",
@@ -28,13 +28,13 @@ export const data = {
        рыбные тексты. Лучше, алфавит? Вершину 
        продолжил власти снова если вопрос запятой залетают.
       `,
-      link: "#!",
+      link: "product.html",
       price: {
         old: 3000,
         regular: 3000,
         discount: 2000,
       },
-      rating: `<div class="rating" data-rating-stars="5, 1"></div>`,
+      rating: `<div class="product-category__rating rating" data-rating-stars="5, 4"></div>`,
     },
     {
       image: "https://i.ibb.co/TbJnxRz/comments-1.webp",
@@ -46,13 +46,13 @@ export const data = {
        рыбные тексты. Лучше, алфавит? Вершину 
        продолжил власти снова если вопрос запятой залетают.
       `,
-      link: "#!",
+      link: "product.html",
       price: {
         old: 3000,
         regular: 3000,
         discount: 2000,
       },
-      rating: `<div class="rating" data-rating-stars="5, 1"></div>`,
+      rating: `<div class="product-category__rating rating" data-rating-stars="5, 2"></div>`,
     },
     {
       image: "https://i.ibb.co/TbJnxRz/comments-1.webp",
@@ -64,13 +64,13 @@ export const data = {
        рыбные тексты. Лучше, алфавит? Вершину 
        продолжил власти снова если вопрос запятой залетают.
       `,
-      link: "#!",
+      link: "product.html",
       price: {
         old: 3000,
         regular: 3000,
         discount: 2000,
       },
-      rating: `<div class="rating" data-rating-stars="5, 1"></div>`,
+      rating: `<div class="rating" data-rating-stars="5, 3"></div>`,
     },
     {
       image: "https://i.ibb.co/TbJnxRz/comments-1.webp",
@@ -82,13 +82,13 @@ export const data = {
        рыбные тексты. Лучше, алфавит? Вершину 
        продолжил власти снова если вопрос запятой залетают.
       `,
-      link: "#!",
+      link: "product.html",
       price: {
         old: 3000,
         regular: 3000,
         discount: 2000,
       },
-      rating: `<div class="rating" data-rating-stars="5, 1"></div>`,
+      rating: `<div class="product-category__rating rating" data-rating-stars="5, 1"></div>`,
     }
   ]
 };

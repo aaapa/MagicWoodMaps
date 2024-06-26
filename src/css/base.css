@@ -9,6 +9,7 @@
 @import url("../../components/rating/rating.css");
 @import url("../../components/footer/footer.css");
 @import url("../../components/current-page/current-page.css");
+@import url("../../components/price-range/price-range.css");
 
 /* components */
 
@@ -28,6 +29,7 @@
 @import url("../../blocks/news/news.css");
 @import url("../../blocks/news-block/news-block.css");
 @import url("../../blocks/product-category/product-category.css");
+@import url("../../blocks/product/product.css");
 
 /* blocks */
 
@@ -42,6 +44,7 @@
 
 @import url("../libraries/simplebar/simplebar.css");
 @import url("../libraries/swiper/swiper-bundle.min.css");
+@import url("../libraries/noUiSlider-15.8.1/nouislider.min.css");
 
 /* libraries */
 

@@ -4,6 +4,9 @@ header();
 import { rating } from "../components/rating/rating.js";
 rating();
 
+import { priceRange } from "../components/price-range/price-range.js";
+priceRange();
+
 import { offer } from "../blocks/offer/offer.js";
 offer();
 
@@ -18,6 +21,9 @@ news();
 
 import { productCategory } from "../blocks/product-category/product-category.js";
 productCategory();
+
+import { product } from "../blocks/product/product.js";
+product()
 
 import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();

@@ -1,5 +1,4 @@
 export const rating = () => {
-  if (document.querySelector(".rating")) {
     const processRatings = () => {
       const ratingElements = document.querySelectorAll(".rating:not(.processed)");
   
@@ -38,6 +37,5 @@ export const rating = () => {
   
     observer.observe(document.body, { childList: true, subtree: true });
   }
-};
 
 rating();

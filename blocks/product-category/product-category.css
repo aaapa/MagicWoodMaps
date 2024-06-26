@@ -257,6 +257,10 @@
   text-decoration: line-through;
 }
 
+.product-category__rating .rating__star {
+  font-size: 1rem;
+}
+
 .product-category__desc {
   color: #9295AA;
   font-size: 1.125rem;

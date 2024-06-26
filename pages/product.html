@@ -4,11 +4,11 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="../src/css/base.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MaginWoodMaps - товары категории</title>
+   <title>MaginWoodMaps - однослойная карта</title>
   </head>
   <body data-simplebar>
    <div class="wrapper">
-    <header class="header">
+    <header class="header" hidden>
       <div class="header__body">
        <div class="header__contacts">
         <div class="header__contacts-body container">
@@ -190,7 +190,7 @@
       </div>
    </header>
     <main class="main">
-     <section class="current-page">
+     <section class="current-page" hidden>
         <div class="current-page__body container">
          <div class="current-page__content">
           <h1 class="title medium">Однослойные карты</h1>
@@ -212,94 +212,207 @@
          </div>
         </div>
      </section>
-     <section class="product-category">
-      <div class="product-category__body container">
-       <header class="product-category__header">
-        <div class="product-category__header-column">
-         <h2 class="title medium">Однослойные карты</h2>
-         <div class="product-category__total-cards">
-          <span>Всего позиций: 6</span>
+     <section class="product">
+      <div class="product__body container">
+       <div class="product__slider">
+         <div class="product__slider-top-wrapper swiper-wrapper">
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          </div>
+          <div class="product__slider-slide swiper-slide">
+            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-10.jpg" />
+          </div>
+         </div>
+         <menu class="product__slider-menu">
+          <li>
+           <button class="product__slider-button next" type="button" data-tippy-content="Предыдущая картинка">
+            <i class="fa-solid fa-chevron-left"></i>
+           </button>            
+          </li>
+          <li>
+           <button class="product__slider-button prev" type="button" data-tippy-content="Следующая картинка">
+            <i class="fa-solid fa-chevron-right"></i>
+           </button>            
+          </li>
+         </menu>
+         <div class="product__slider-bottom" thumbsSlider>
+         <div class="product__slider-bottom-wrapper swiper-wrapper">
+          <div class="product__slider-slide swiper-slide">
+           <button class="product__slider-bottom-button" type="button">
+            <img class="product__slider-bottom-image" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+           </button>
+          </div>
+          <div class="product__slider-slide swiper-slide">
+           <button class="product__slider-bottom-button" type="button">
+            <img class="product__slider-bottom-image" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+           </button>
+          </div>
+          <div class="product__slider-slide swiper-slide">
+           <button class="product__slider-bottom-button" type="button">
+            <img class="product__slider-bottom-image" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+           </button>
+          </div>
+          <div class="product__slider-slide swiper-slide">
+           <button class="product__slider-bottom-button" type="button">
+            <img class="product__slider-bottom-image" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+           </button>
+          </div>
          </div>
         </div>
-        <div class="product-category__sorting">
-         <span class="product-category__sorting-text">Сортировать по:</span>
-         <div class="product-category__sorting-select">
-          <button class="product-category__sorting-selected-item" type="button">
-           <span>Карта</span>
-           <i class="product-category__sorting-icon fa-solid fa-chevron-down"></i>
-          </button>
+       </div>
+       <div class="product__info">
+        <div class="product__info-content">
+         <header class="product__info-header">
+         <div class="product__info-column">
+          <h2 class="title medium">Однослойная карта</h2>
+          <span class="product__info-desc">Модель: 3DMBL</span>
          </div>
-        </div>
-       </header>
-       <div class="product-category__main">
-        <div class="product-category__params">
-         <fieldset class="product-category__fieldset">
-          <legend class="product-category__params-title">Карты</legend>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-         </fieldset>
-         <fieldset class="product-category__fieldset">
-          <legend class="product-category__params-title">Карты</legend>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-         </fieldset>
-         <fieldset class="product-category__fieldset">
-          <legend class="product-category__params-title">Ценовой диапазон</legend>
-          <div class="price-range">
-           <div class="price-range__slider">
+         <div class="product__info-row">
+          <div class="product__info-rating rating" data-rating-stars="5, 1"></div>
+          <a class="product__info-link" href="#!">6 отзывов</a>
+         </div>
+         </header>
+         <div class="product__info-main">
+          <div class="product__info-params">
+          <div class="product__info-param">
+           <h6 class="product__info-param-title">Размер</h6>
+           <menu class="product__info-param-menu">
+            <li>
+             <button class="product__info-param-button button transparent" type="button">
+              <span>М: 100х60см</span>
+             </button>
+            </li>
+            <li>
+             <button class="product__info-param-button button transparent" type="button">
+              <span>L: 150х90см</span>
+             </button>
+            </li>
+            <li>
+             <button class="product__info-param-button button transparent" type="button">
+              <span>XL: 200х120см</span>
+             </button>
+            </li>
+           </menu>
+          </div>
+          <div class="product__info-param">
+            <h6 class="product__info-param-title">Тип карты</h6>
+            <menu class="product__info-param-menu">
+             <li>
+              <button class="product__info-param-button button transparent" type="button">
+               <span>Тип 1</span>
+              </button>
+             </li>
+             <li>
+              <button class="product__info-param-button button transparent" type="button">
+               <span>Тип 2</span>
+              </button>
+             </li>
+             <li>
+              <button class="product__info-param-button button transparent" type="button">
+               <span>Тип 3</span>
+              </button>
+             </li>
+            </menu>
            </div>
-           <div class="price-range__values">
-            <input class="price-range__input min" type="number"/>
-            <input class="price-range__input max" type="number"/>
+           <div class="product__info-param">
+            <h6 class="product__info-param-title">Язык гравировки</h6>
+            <menu class="product__info-param-menu">
+             <li>
+              <button class="product__info-param-button button transparent" type="button">
+               <span>Русский</span>
+              </button>
+             </li>
+             <li>
+              <button class="product__info-param-button button transparent" type="button">
+               <span>Английский</span>
+              </button>
+             </li>
+            </menu>
            </div>
           </div>
-         </fieldset>
-        </div>
-        <div class="product-category__slider swiper">
-         <div class="product-category__slider-wrapper swiper-wrapper">
+          <div class="product__info-price">
+           <div class="product__info-price-row">
+            <strong class="product__info-price-text new">1 000 ₴</strong>
+            <del class="product__info-price-text old">2 000 ₴</del>
+           </div>
+           <a class="product__info-price-link" href="#!">Сообщить о скидках</a>
+          </div>
          </div>
-         <div class="product-category__menu">
-          <button class="product-category__slider-button prev" type="button" aria-label="Предыдущие товары" data-tippy-content="Предыдущие товары">
-           <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <div class="product-category__pagination"></div>
-          <button class="product-category__slider-button next" type="button" aria-label="Следующие товары" data-tippy-content="Следующие товары">
-           <i class="fa-solid fa-chevron-right"></i>
-          </button>
-         </div>
+         <footer class="product__info-footer">
+          <menu class="product__info-menu">
+           <li>
+            <button class="product__info-menu-button button transparent" type="button">
+             <span>Добавить в корзину</span>
+            </button>
+           </li>
+           <li>
+            <button class="product__info-menu-button button transparent" type="button">
+             <span>Купить в 1 клик</span>
+            </button>
+           </li>
+           <li>
+            <button class="product__info-button small" type="button" aria-label="Добавить в избранное" data-tippy-content="Добавить в избранное">
+             <i class="fa-regular fa-heart"></i>
+            </button>
+           </li>
+          </menu>
+          <div class="product__info-footer-column">
+           <ul class="product__payment-methods">
+            <li>
+             <a class="product__payment-methods-link" href="#!" aria-label="mastercard" data-tippy-content="mastercard">
+              <img src="../src/imgs/product/mastercard.svg" alt="">
+             </a>
+            </li>
+            <li>
+              <a class="product__payment-methods-link" href="#!" aria-label="visa" data-tippy-content="visa">
+               <img src="../src/imgs/product/visa.svg" alt="">
+              </a>
+             </li>
+             <li>
+              <a class="product__payment-methods-link" href="#!" aria-label="google-pay" data-tippy-content="google-pay">
+               <img src="../src/imgs/product/google-pay.svg" alt="">
+              </a>
+             </li>
+             <li>
+              <a class="product__payment-methods-link" href="#!" aria-label="apple-pay" data-tippy-content="apple-pay">
+               <img src="../src/imgs/product/apple-pay.svg" alt="">
+              </a>
+             </li>
+           </ul>
+           <button class="product__info-link" type="button">
+            <span>Написать отзыв</span>
+           </button>
+          </div>
+         </footer>
         </div>
        </div>
       </div>
      </section>
-     <section class="feedback">
+     <section class="feedback" hidden>
       <div class="feedback__body container">
        <header class="feedback__header">
         <h2 class="feedback__title">Обратный звонок</h2>
@@ -335,7 +448,7 @@
       </div>
      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" hidden>
       <div class="footer__body container">
        <div class="footer__newsletter">
         <div class="footer__newsletter-top">
@@ -414,7 +527,6 @@
    <script src="../src/libraries/simplebar/simplebar.min.js"></script>
    <script src="../src/libraries/tippy/popper.js"></script>
    <script src="../src/libraries/tippy/tippy.js"></script>
-   <script src="../src/libraries/noUiSlider-15.8.1/nouislider.min.js"></script>
    <script src="../src/libraries/swiper/swiper-bundle.min.js"></script>
    <script src="../src/icon-font/font-awesome/all.min.js"></script>
    <script type="module" src="../src/main.js"></script>
