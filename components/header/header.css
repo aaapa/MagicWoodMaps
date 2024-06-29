@@ -189,14 +189,20 @@
 }
 
 @media (hover:hover) {
-  .header__mobile-menu-button:hover {
+  .header__mobile-menu-button:not(.header__mobile-menu-button.active):hover {
     color: white;
     background-color: var(--accent);
   }
 }
 
-.header__mobile-menu-button:active {
+.header__mobile-menu-button:not(.header__mobile-menu-button.active):active {
   scale: var(--scale);
+}
+
+.header__mobile-menu-button.active {
+  cursor: default;
+  color: whitesmoke;
+  background-color: var(--accent);
 }
 
 .header__mobile-menu-button::before {
@@ -325,6 +331,7 @@
 }
 
 .header__link.active {
+  cursor: default;
   font-weight: 600;
   color: var(--accent);
 }

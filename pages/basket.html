@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="../src/css/base.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MaginWoodMaps - товары категории</title>
+   <title>MaginWoodMaps - Корзина</title>
   </head>
   <body data-simplebar>
    <div class="wrapper">
@@ -63,9 +63,9 @@
            <span class="header__logo-text">Magic Wood Maps</span>
           </a>
           <div class="header__mobile-menu">
-           <a class="header__mobile-menu-button" href="basket.html" aria-label="Корзина" data-tippy-content="Корзина" data-counter="1">
+           <span class="header__mobile-menu-button active" aria-label="Корзина" data-tippy-content="Корзина" data-counter="1">
             <i class="fa-solid fa-bag-shopping"></i>
-           </a>
+           </span>
            <a class="header__mobile-menu-button" href="#!" aria-label="Избранное" data-tippy-content="Избранное" data-counter="11">
             <i class="fa-regular fa-heart"></i>
            </a>
@@ -86,7 +86,7 @@
             </a>
            </li>
            <li class="header__list-item">
-             <a class="header__link" href="basket.html">
+             <a class="header__link active" href="#!">
                <i class="fa-solid fa-bag-shopping"></i>
               <span>Корзина</span>
              </a>
@@ -191,114 +191,172 @@
    </header>
     <main class="main">
      <section class="current-page">
-        <div class="current-page__body container">
-         <div class="current-page__content">
-          <h1 class="title medium">Однослойные карты</h1>
-          <div class="current-page__breadcrumbs">
-           <nav class="current-page__breadcrumbs-nav">
-            <ul class="current-page__breadcrumbs-list">
-             <li>
-              <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
-             </li>
-             <li>
-              <a class="current-page__breadcrumbs-link" href="catalog.html">Категории</a>
-             </li>
-             <li>
-              <span class="current-page__breadcrumbs-link active">Однослойные карты</span>
-             </li>
-            </ul>
-           </nav>        
-          </div>
-         </div>
-        </div>
-     </section>
-     <section class="product-category">
-      <div class="product-category__body container">
-       <header class="product-category__header">
-        <div class="product-category__header-column">
-         <h2 class="title medium">Однослойные карты</h2>
-         <div class="product-category__total-cards">
-          <span>Всего позиций: 6</span>
-         </div>
-        </div>
-        <div class="product-category__sorting">
-         <span class="product-category__sorting-text">Сортировать по:</span>
-         <div class="product-category__sorting-select">
-          <button class="product-category__sorting-selected-item" type="button">
-           <span>Карта</span>
-           <i class="product-category__sorting-icon fa-solid fa-chevron-down"></i>
-          </button>
-         </div>
-        </div>
-       </header>
-       <div class="product-category__main">
-        <div class="product-category__params">
-         <fieldset class="product-category__fieldset">
-          <legend class="product-category__params-title">Карты</legend>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-         </fieldset>
-         <fieldset class="product-category__fieldset">
-          <legend class="product-category__params-title">Карты</legend>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-           <label class="product-category__param">
-            <input class="product-category__checkbox" type="checkbox">
-            <span>Однослойные карты</span>
-           </label>
-         </fieldset>
-         <fieldset class="product-category__fieldset">
-          <legend class="product-category__params-title">Ценовой диапазон</legend>
-          <div class="price-range">
-           <div class="price-range__slider">
-           </div>
-           <div class="price-range__values">
-            <input class="price-range__input min" type="number"/>
-            <input class="price-range__input max" type="number"/>
-           </div>
-          </div>
-         </fieldset>
-        </div>
-        <div class="product-category__slider swiper">
-         <div class="product-category__slider-wrapper swiper-wrapper">
-         </div>
-         <div class="product-category__menu">
-          <button class="product-category__slider-button prev" type="button" aria-label="Предыдущие товары" data-tippy-content="Предыдущие товары">
-           <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <div class="product-category__pagination"></div>
-          <button class="product-category__slider-button next" type="button" aria-label="Следующие товары" data-tippy-content="Следующие товары">
-           <i class="fa-solid fa-chevron-right"></i>
-          </button>
-         </div>
+      <div class="current-page__body container">
+       <div class="current-page__content">
+        <h1 class="title medium">Корзина</h1>
+        <div class="current-page__breadcrumbs">
+         <nav class="current-page__breadcrumbs-nav">
+          <ul class="current-page__breadcrumbs-list">
+           <li>
+            <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
+           </li>
+           <li>
+            <span class="current-page__breadcrumbs-link active">Корзина</span>
+           </li>
+          </ul>
+         </nav>        
         </div>
        </div>
       </div>
      </section>
+     <div class="basket">
+      <div class="basket__body container">
+       <div class="basket__row">
+        <div class="basket__column">
+         <div class="basket__data">
+          <table class="basket__table">
+         <thead>
+          <tr>
+           <th>Товар</th>
+           <th>Цена</th>
+           <th>Количество</th>
+           <th>Всего</th>
+          </tr>           
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            <div class="basket__item">
+             <div class="basket__item-image-container">
+              <button class="basket__delete-button" type="button" aria-label="Кнопка для удаления товара из корзины" data-tippy-content="Удалить товар из корзины">
+               <span class="basket__delete-button-icon">
+                <i class="fa-solid fa-xmark"></i>
+               </span>
+              </button>
+              <img class="basket__item-image" src="https://i.ibb.co/TbJnxRz/comments-1.webp" alt="">
+             </div>
+             <div class="basket__item-info">
+              <h6 class="basket__item-title">Однослойная карта</h6>
+              <div class="basket__item-sub-info">
+               <span>Цвет: коричневый</span>
+               <span>Размер: XL</span>                
+              </div>
+             </div>
+            </div>
+           </td>
+           <td>
+            <span class="basket__item-price">3200  ₴</span>
+           </td>
+           <td>
+           <menu class="basket__item-counter">
+            <li>
+             <button class="basket__item-counter-button delete" type="button">
+              <span>&minus;</span>
+             </button>
+            </li>
+            <li>
+             <input class="basket__item-counter-input" type="number">
+            </li>
+            <li>
+             <button class="basket__item-counter-button add" type="button">
+              <span>&plus;</span>
+             </button>
+            </li>
+           </menu>
+           </td>
+           <td>
+            <span class="basket__item-price">1900 ₴</span>
+           </td>
+          </tr>          
+         </tbody>
+          </table>
+          <menu class="basket__data-menu" data-da=".basket__data, 992, 0">
+           <li>
+            <button class="basket__data-menu-button button accent" type="button">
+             <span>На главную</span>
+            </button>
+           </li>
+           <li>
+            <button class="basket__data-menu-button button accent" type="button">
+             <span>Очистить</span>
+            </button>
+           </li>
+          </menu>       
+         </div>
+         <div class="basket__bottom">
+          <div class="basket__pay-method">
+            <h3 class="basket__pay-method-title">Способ оплаты</h3>
+            <menu class="basket__pay-method-items">
+             <button class="basket__pay-method-button" type="button">
+              <span>Картой</span>
+             </button>
+             <button class="basket__pay-method-button" type="button">
+              <span>Наличными</span>
+             </button>
+            </menu>
+          </div>
+          <form class="basket__form">
+            <h4 class="basket__form-title">Ваши данные</h4>
+            <div class="basket__form-inputs">
+             <div class="basket__form-input-container">
+              <h6 class="basket__form-input-title">Имя</h6>
+              <input class="basket__form-input" type="text" placeholder="Имя">
+             </div>
+             <div class="basket__form-input-container">
+              <h6 class="basket__form-input-title">Телефон</h6>
+              <input class="basket__form-input" type="text" placeholder="Телефон">
+             </div>
+             <div class="basket__form-input-container">
+              <h6 class="basket__form-input-title">Электронная почта</h6>
+              <input class="basket__form-input" type="email" placeholder="Электронная почта">
+             </div>
+            </div>
+            <div class="basket__form-agreement">
+             <label class="basket__form-agreement-label">
+              <input class="basket__form-agreement-checkbox" type="checkbox">
+              <span class="basket__form-agreement-text">Отправлять эксклюзивные предложения в SMS-рассылке от Magic Woods Map</span>
+             </label>
+            </div>
+          </form>          
+         </div>
+        </div>
+        <div class="basket__pay">
+        <h5 class="basket__pay-title">К оплате</h5>
+        <div class="basket__pay-content">
+         <div class="basket__pay-all">
+          <h6 class="basket__pay-all-title">Сумма оплаты</h6>
+          <strong class="basket__pay-all-price">5 000 ₴</strong>
+         </div>
+         <div class="basket__pay-items">
+          <div class="basket__pay-item">
+           <span>Товары, 1шт</span>
+           <span>1 000 ₴</span>
+          </div>
+          <div class="basket__pay-item">
+           <span>Скидка</span>
+           <span>- 1 000 ₴</span>
+          </div>
+         </div>
+         <div class="basket__pay-delivery-method">
+          <span>Доставка:</span>
+          <a class="basket__pay-delivery-method-link" href="#!">Выбрать адрес доставки</a>
+         </div>
+         <a class="basket__pay-button button accent" href="#!">Заказать</a>
+         <div class="basket__pay-agreement">
+          <label class="basket__pay-agreement-label">
+           <input class="basket__pay-agreement-checkbox" type="checkbox">
+           <span class="basket__pay-agreement-text">
+            <span>Согласен с условиями</span>
+            <a class="basket__pay-agreement-link" href="#!">Правил пользования торговой площадкой</a>
+            <a class="basket__pay-agreement-link" href="#!">и правилами возврата</a>
+           </span>
+          </label>
+         </div>
+        </div>
+        </div>          
+       </div>
+      </div>
+     </div>
      <section class="feedback">
       <div class="feedback__body container">
        <header class="feedback__header">
@@ -414,7 +472,6 @@
    <script src="../src/libraries/simplebar/simplebar.min.js"></script>
    <script src="../src/libraries/tippy/popper.js"></script>
    <script src="../src/libraries/tippy/tippy.js"></script>
-   <script src="../src/libraries/noUiSlider-15.8.1/nouislider.min.js"></script>
    <script src="../src/libraries/swiper/swiper-bundle.min.js"></script>
    <script src="../src/icon-font/font-awesome/all.min.js"></script>
    <script type="module" src="../src/main.js"></script>

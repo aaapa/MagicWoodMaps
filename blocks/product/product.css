@@ -3,29 +3,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--padding);
+  border-bottom: 1px solid #E1E1E4;
+  padding: 150px var(--padding) 60px var(--padding);
 }
 
 .product__body {
   width: 100%;
-  display: flex;
+  display: grid;
   gap: 70px;
-  align-items: start;
-  justify-content: center;
+  grid-template-columns: 40% 1fr;
 }
 
 .product__slider {
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  max-width: 610px;
+  overflow: hidden;
   position: relative;
-  flex-direction: column;
 }
 
-.product__slider-top-wrapper {
-  height: 610px !important;
-  overflow: hidden;
+.product__slider-top {
+  width: 100%;
+  max-width: 600px;
+}
+
+.product__slider-thumbs {
+  margin-top: 10px;
+}
+
+.product__slider-thumbs .swiper-wrapper .swiper-slide {
+  width: auto !important;
 }
 
 .product__slider-top-image {
@@ -64,52 +68,54 @@
 }
 
 @media (hover:hover) {
-  .product__slider-button:hover {
+  .product__slider-button:not(.product__slider-button.swiper-button-disabled):hover {
     color: whitesmoke;
     background-color: var(--accent);
   }
 }
 
-.product__slider-button:active {
+.product__slider-button:not(.product__slider-button.swiper-button-disabled):active {
   scale: var(--scale);
+}
+
+.product__slider-button.swiper-button-disabled {
+  cursor: default;
+  opacity: var(--opacity);
 }
 
 .product__slider-slide.swiper-slide {
   width: auto !important;
+
 }
 
-.product__slider-bottom-button {
+.product__slider-thumb {
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 @media (hover:hover) {
-  .product__slider-bottom-button:hover {
+  .product__slider-thumb:not(.product__slider-thumb.active):hover {
     opacity: var(--opacity);
   }
 }
 
-.product__slider-bottom-button:active {
+.product__slider-thumb:not(.product__slider-thumb.active):active {
   scale: var(--scale);
 }
 
-.product__slider-bottom {
-  width: 100%;
-  height: 150px;
-  max-width: 610px;
-  overflow: hidden;
+.product__slider-thumb.active {
+  cursor: default;
+  border-radius: 6px;
+  border: 7px solid white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.product__slider-bottom-wrapper {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.product__slider-bottom-image {
+.product__slider-thumb-image {
   width: 150px;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -334,6 +340,7 @@
 
 @media (max-width: 992px) {
   .product__body {
+    display: flex;
     align-items: center;
     flex-direction: column;
   }
