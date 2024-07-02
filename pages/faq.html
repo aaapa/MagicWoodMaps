@@ -4,11 +4,11 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="../src/css/base.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MaginWoodMaps - однослойная карта</title>
+   <title>MaginWoodMaps - Оплата и доставка</title>
   </head>
   <body data-simplebar>
    <div class="wrapper">
-    <header class="header">
+    <header class="header" hidden>
       <div class="header__body">
        <div class="header__contacts">
         <div class="header__contacts-body container">
@@ -63,9 +63,9 @@
            <span class="header__logo-text">Magic Wood Maps</span>
           </a>
           <div class="header__mobile-menu">
-           <a class="header__mobile-menu-button" href="basket.html" aria-label="Корзина" data-tippy-content="Корзина" data-counter="1">
+           <span class="header__mobile-menu-button active" aria-label="Корзина" data-tippy-content="Корзина" data-counter="1">
             <i class="fa-solid fa-bag-shopping"></i>
-           </a>
+           </span>
            <a class="header__mobile-menu-button" href="#!" aria-label="Избранное" data-tippy-content="Избранное" data-counter="11">
             <i class="fa-regular fa-heart"></i>
            </a>
@@ -86,7 +86,7 @@
             </a>
            </li>
            <li class="header__list-item">
-             <a class="header__link" href="basket.html">
+             <a class="header__link active" href="#!">
                <i class="fa-solid fa-bag-shopping"></i>
               <span>Корзина</span>
              </a>
@@ -143,9 +143,9 @@
              </a>
             </li>
             <li class="header__list-item">
-             <a class="header__link" href="faq.html" data-tippy-content="Часто задаваемые вопросы">
+             <span class="header__link active" data-tippy-content="Часто задаваемые вопросы">
               <span>FAQ</span>
-             </a>
+             </span>
             </li>
            </ul>
           </nav>
@@ -191,280 +191,58 @@
    </header>
     <main class="main">
      <section class="current-page">
-        <div class="current-page__body container">
-         <div class="current-page__content">
-          <h1 class="title medium">Однослойные карты</h1>
-          <div class="current-page__breadcrumbs">
-           <nav class="current-page__breadcrumbs-nav">
-            <ul class="current-page__breadcrumbs-list">
-             <li>
-              <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
-             </li>
-             <li>
-              <a class="current-page__breadcrumbs-link" href="catalog.html">Категории</a>
-             </li>
-             <li>
-              <span class="current-page__breadcrumbs-link active">Однослойные карты</span>
-             </li>
-            </ul>
-           </nav>        
-          </div>
-         </div>
-        </div>
-     </section>
-     <section class="product">
-      <div class="product__body container">
-       <div class="product__slider">
-        <div class="product__slider-top">
-         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product__slider-top-image" src="https://swiperjs.com/demos/images/nature-4.jpg" />
-          </div>
-         </div>          
-        </div>
-         <menu class="product__slider-menu">
-          <li>
-           <button class="product__slider-button prev" type="button" data-tippy-content="Предыдущая картинка">
-            <i class="fa-solid fa-chevron-left"></i>
-           </button>            
-          </li>
-          <li>
-           <button class="product__slider-button next" type="button" data-tippy-content="Следующая картинка">
-            <i class="fa-solid fa-chevron-right"></i>
-           </button>            
-          </li>
-         </menu>
-         <div class="product__slider-thumbs" thumbsSlider>
-          <div class="swiper-wrapper">
-          <div class="swiper-slide">
-           <button class="product__slider-thumb" type="button">
-            <img class="product__slider-thumb-image" src="https://swiperjs.com/demos/images/nature-1.jpg" />
-           </button>
-          </div>
-          <div class="swiper-slide">
-           <button class="product__slider-thumb" type="button">
-            <img class="product__slider-thumb-image" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-           </button>
-          </div>
-          <div class="swiper-slide">
-           <button class="product__slider-thumb" type="button">
-            <img class="product__slider-thumb-image" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-           </button>
-          </div>
-          <div class="swiper-slide">
-           <button class="product__slider-thumb" type="button">
-            <img class="product__slider-thumb-image" src="https://swiperjs.com/demos/images/nature-4.jpg" />
-           </button>
-          </div>
-          </div>
-         </div>
-        </div>
-       <div class="product__info">
-        <div class="product__info-content">
-         <header class="product__info-header">
-         <div class="product__info-column">
-          <h2 class="title medium">Однослойная карта</h2>
-          <span class="product__info-desc">Модель: 3DMBL</span>
-         </div>
-         <div class="product__info-row">
-          <div class="product__info-rating rating" data-rating-stars="5, 1"></div>
-          <a class="product__info-link" href="#!">6 отзывов</a>
-         </div>
-         </header>
-         <div class="product__info-main">
-          <div class="product__info-params">
-          <div class="product__info-param">
-           <h6 class="product__info-param-title">Размер</h6>
-           <menu class="product__info-param-menu">
-            <li>
-             <button class="product__info-param-button button transparent" type="button">
-              <span>М: 100х60см</span>
-             </button>
-            </li>
-            <li>
-             <button class="product__info-param-button button transparent" type="button">
-              <span>L: 150х90см</span>
-             </button>
-            </li>
-            <li>
-             <button class="product__info-param-button button transparent" type="button">
-              <span>XL: 200х120см</span>
-             </button>
-            </li>
-           </menu>
-          </div>
-          <div class="product__info-param">
-            <h6 class="product__info-param-title">Тип карты</h6>
-            <menu class="product__info-param-menu">
-             <li>
-              <button class="product__info-param-button button transparent" type="button">
-               <span>Тип 1</span>
-              </button>
-             </li>
-             <li>
-              <button class="product__info-param-button button transparent" type="button">
-               <span>Тип 2</span>
-              </button>
-             </li>
-             <li>
-              <button class="product__info-param-button button transparent" type="button">
-               <span>Тип 3</span>
-              </button>
-             </li>
-            </menu>
-           </div>
-           <div class="product__info-param">
-            <h6 class="product__info-param-title">Язык гравировки</h6>
-            <menu class="product__info-param-menu">
-             <li>
-              <button class="product__info-param-button button transparent" type="button">
-               <span>Русский</span>
-              </button>
-             </li>
-             <li>
-              <button class="product__info-param-button button transparent" type="button">
-               <span>Английский</span>
-              </button>
-             </li>
-            </menu>
-           </div>
-          </div>
-          <div class="product__info-price">
-           <div class="product__info-price-row">
-            <strong class="product__info-price-text new">1 000 ₴</strong>
-            <del class="product__info-price-text old">2 000 ₴</del>
-           </div>
-           <a class="product__info-price-link" href="#!">Сообщить о скидках</a>
-          </div>
-         </div>
-         <footer class="product__info-footer">
-          <menu class="product__info-menu">
+      <div class="current-page__body container">
+       <div class="current-page__content">
+        <h1 class="title medium">FAQ</h1>
+        <div class="current-page__breadcrumbs">
+         <nav class="current-page__breadcrumbs-nav">
+          <ul class="current-page__breadcrumbs-list">
            <li>
-            <button class="product__info-menu-button button transparent" type="button">
-             <span>Добавить в корзину</span>
-            </button>
+            <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
            </li>
            <li>
-            <button class="product__info-menu-button button transparent" type="button">
-             <span>Купить в 1 клик</span>
-            </button>
+            <span class="current-page__breadcrumbs-link active">FAQ</span>
            </li>
-           <li>
-            <button class="product__info-button small" type="button" aria-label="Добавить в избранное" data-tippy-content="Добавить в избранное">
-             <i class="fa-regular fa-heart"></i>
-            </button>
-           </li>
-          </menu>
-          <div class="product__info-footer-column">
-           <ul class="product__payment-methods">
-            <li>
-             <a class="product__payment-methods-link" href="#!" aria-label="mastercard" data-tippy-content="mastercard">
-              <img src="../src/imgs/product/mastercard.svg" alt="">
-             </a>
-            </li>
-            <li>
-              <a class="product__payment-methods-link" href="#!" aria-label="visa" data-tippy-content="visa">
-               <img src="../src/imgs/product/visa.svg" alt="">
-              </a>
-             </li>
-             <li>
-              <a class="product__payment-methods-link" href="#!" aria-label="google-pay" data-tippy-content="google-pay">
-               <img src="../src/imgs/product/google-pay.svg" alt="">
-              </a>
-             </li>
-             <li>
-              <a class="product__payment-methods-link" href="#!" aria-label="apple-pay" data-tippy-content="apple-pay">
-               <img src="../src/imgs/product/apple-pay.svg" alt="">
-              </a>
-             </li>
-           </ul>
-           <button class="product__info-link" type="button">
-            <span>Написать отзыв</span>
-           </button>
-          </div>
-         </footer>
+          </ul>
+         </nav>        
         </div>
        </div>
       </div>
      </section>
-     <div class="tabs">
-      <div class="tabs__body container">
-       <menu class="tabs__menu">
-        <li>
-         <button class="tabs__button" data-tab="#tab-1">
-          <span>Описание</span>
-         </button>
-        </li>
-        <li>
-         <button class="tabs__button" data-tab="#tab-2">
-          <span>Характеристики</span>
-         </button>
-        </li>
-        <li>
-         <button class="tabs__button" data-tab="#tab-3">
-          <span>Срок доставки</span>
-         </button>
-        </li>
-        <li>
-         <button class="tabs__button" data-tab="#tab-4">
-          <span>Как установить</span>
-         </button>
-        </li>
-        <li>
-         <button class="tabs__button" data-tab="#tab-5">
-          <span>Оплата</span>
-         </button>
-        </li>
-        <li>
-         <button class="tabs__button" data-tab="#tab-6">
-          <span>Доставка</span>
-         </button>
-        </li>
-        <li>
-         <button class="tabs__button" data-tippy-content="Часто задаваемые вопросы">
-          <span>FAQ</span>
-         </button>
-        </li>
-       </menu>
-       <div id="tab-1" class="tabs__item">
-        <span>Описание</span>
+     <section class="faq">
+      <div class="faq__body container">
+       <h2 class="title medium lines" data-tippy-content="Часто задаваемые вопросы">FAQ</h2>
+       <div class="faq__accordion">
+        <div class="faq__accordion-item">
+         <div class="faq__accordion-top">
+          <div class="faq__accordion-column">
+           <h6 class="faq__accordion-title">Из какого материала сделана карта?</h6>
+          </div>
+          <button class="faq__accordion-button-more" type="button" aria-label="Кнопка, для просмотра дополнительной информации" data-tippy-content="Посмотреть дополнительную информацию"></button>
+         </div>
+         <div class="faq__accordion-content">
+          <span class="faq__accordion-desc">
+            Карта изготовлена ​​из высококачественной березовой фанеры, которая покрывается масло-воском.
+          </span>
+         </div>
+        </div>
+        <div class="faq__accordion-item">
+         <div class="faq__accordion-top">
+          <div class="faq__accordion-column">
+           <h6 class="faq__accordion-title">Из какого материала сделана карта?</h6>
+          </div>
+          <button class="faq__accordion-button-more" type="button" aria-label="Кнопка, для просмотра дополнительной информации" data-tippy-content="Посмотреть дополнительную информацию"></button>
+         </div>
+         <div class="faq__accordion-content">
+          <span class="faq__accordion-desc">
+            Карта изготовлена ​​из высококачественной березовой фанеры, которая покрывается масло-воском.
+          </span>
+         </div>
+        </div>
        </div>
-       <div id="tab-2" class="tabs__item">
-        <span>Характеристики</span>
-       </div>
-       <div id="tab-3" class="tabs__item">
-        <span>Срок доставки</span>
-       </div>
-       <div id="tab-4" class="tabs__item">
-        <span>Как установить</span>
-       </div>
-       <div id="tab-5" class="tabs__item">
-        <span>Оплата</span>
-       </div>
-       <div id="tab-6" class="tabs__item">
-        <span>Доставка</span>
-       </div>
-       <div id="tab-7" class="tabs__item">
-        <span>FAQ</span>
-       </div>
-      </div>
-     </div>
-     <section class="similar-products">
-      <div class="similar-products__body container">
-       <h2 class="similar-products__title title medium lines">Похожие товары</h2>
-       <ul class="similar-products__list"></ul>
       </div>
      </section>
-     <section class="feedback">
+     <section class="feedback" hidden>
       <div class="feedback__body container">
        <header class="feedback__header">
         <h2 class="feedback__title">Обратный звонок</h2>
@@ -500,7 +278,7 @@
       </div>
      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" hidden>
       <div class="footer__body container">
        <div class="footer__newsletter">
         <div class="footer__newsletter-top">

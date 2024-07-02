@@ -34,6 +34,9 @@ similarProducts()
 import { basket } from "../blocks/basket/basket.js";
 basket()
 
+import { faq } from "../blocks/faq/faq.js";
+faq()
+
 import { useDynamicAdapt } from "./libraries/dynamicAdapt/dynamicAdapt.js";
 useDynamicAdapt();
 

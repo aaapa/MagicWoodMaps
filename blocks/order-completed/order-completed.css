@@ -1,0 +1,78 @@
+.order-completed {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px var(--padding);
+}
+
+.order-completed__body {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-completed__body::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  background: url("../../src/imgs/order-completed/clock.svg") center / cover no-repeat;
+}
+
+.order-completed__body::after {
+  content: "";
+  width: 70px;
+  height: 75px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: inline-block;
+  background: url("../../src/imgs/order-completed/note.svg") center / cover no-repeat;
+}
+
+.order-completed__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.order-completed__content::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+  display: inline-block;
+  background: url("../../src/imgs/order-completed/access.svg") center / cover no-repeat;
+}
+
+.order-completed__title {
+  text-align: center;
+  color: var(--accent);
+}
+
+.order-completed__desc {
+  color: #8E8E8E;
+  font-weight: 600;
+  text-align: center;
+  line-height: 187%;
+  max-width: 800px;
+  margin-top: 10px;
+}
+
+.order-completed__button {
+  min-height: 60px;
+  margin-top: 40px;
+  border-radius: 3px;
+  padding: 15px 20px;
+  font-size: 1rem !important;
+}

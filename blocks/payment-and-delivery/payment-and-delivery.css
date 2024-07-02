@@ -1,0 +1,51 @@
+.payment-and-delivery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px var(--padding);
+}
+
+.payment-and-delivery__body {
+  width: 100%;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.payment-and-delivery__items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.payment-and-delivery__title {
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+.payment-and-delivery__item {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.payment-and-delivery__item-title {
+  color: black;
+  font-weight: 600;
+  line-height: 136%;
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+}
+
+.payment-and-delivery__item-desc {
+  color: #585858;
+  line-height: 177%;
+  font-size: clamp(0.875rem, 5vw, 1.125rem);
+}

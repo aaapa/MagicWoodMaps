@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="../src/css/base.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MaginWoodMaps - блог</title>
+   <title>MaginWoodMaps - Заказ выполнен</title>
   </head>
   <body data-simplebar>
    <div class="wrapper">
@@ -63,9 +63,9 @@
            <span class="header__logo-text">Magic Wood Maps</span>
           </a>
           <div class="header__mobile-menu">
-           <a class="header__mobile-menu-button" href="basket.html" aria-label="Корзина" data-tippy-content="Корзина" data-counter="1">
+           <span class="header__mobile-menu-button active" aria-label="Корзина" data-tippy-content="Корзина" data-counter="1">
             <i class="fa-solid fa-bag-shopping"></i>
-           </a>
+           </span>
            <a class="header__mobile-menu-button" href="#!" aria-label="Избранное" data-tippy-content="Избранное" data-counter="11">
             <i class="fa-regular fa-heart"></i>
            </a>
@@ -86,7 +86,7 @@
             </a>
            </li>
            <li class="header__list-item">
-             <a class="header__link" href="basket.html">
+             <a class="header__link active" href="#!">
                <i class="fa-solid fa-bag-shopping"></i>
               <span>Корзина</span>
              </a>
@@ -119,14 +119,14 @@
             </a>
            </li>
            <li class="header__list-item">
-            <span class="header__link active">
+            <a class="header__link" href="blog.html">
              <span>Блог</span>
-            </span>
+            </a>
            </li>
            <li class="header__list-item">
-            <a class="header__link" href="catalog.html">
+            <span class="header__link active">
              <span>Каталог</span>
-            </a>
+            </span>
            </li>
           </ul>
          </nav>
@@ -138,12 +138,12 @@
              </a>
             </li>
             <li class="header__list-item">
-             <a class="header__link" href="payment-and-delivery.html">
+             <a class="header__link" href="#!">
               <span>Доставка</span>
              </a>
             </li>
             <li class="header__list-item">
-             <a class="header__link" href="faq.html" data-tippy-content="Часто задаваемые вопросы">
+             <a class="header__link" href="#!" data-tippy-content="Часто задаваемые вопросы">
               <span>FAQ</span>
              </a>
             </li>
@@ -191,63 +191,39 @@
    </header>
     <main class="main">
      <section class="current-page">
-        <div class="current-page__body container">
-         <div class="current-page__content">
-          <h1 class="title medium">Блог</h1>
-          <div class="current-page__breadcrumbs">
-           <nav class="current-page__breadcrumbs-nav">
-            <ul class="current-page__breadcrumbs-list">
-             <li>
-              <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
-             </li>
-             <li>
-              <span class="current-page__breadcrumbs-link active">Блог</span>
-             </li>
-            </ul>
-           </nav>        
-          </div>
-         </div>
+      <div class="current-page__body container">
+       <div class="current-page__content">
+        <h1 class="title medium">Заказ выполнен</h1>
+        <div class="current-page__breadcrumbs">
+         <nav class="current-page__breadcrumbs-nav">
+          <ul class="current-page__breadcrumbs-list">
+           <li>
+            <a class="current-page__breadcrumbs-link" href="../index.html">Главная</a>
+           </li>
+           <li>
+            <a class="current-page__breadcrumbs-link" href="basket.html">Корзина</a>
+           </li>
+           <li>
+            <span class="current-page__breadcrumbs-link active">Заказ выполнен</span>
+           </li>
+          </ul>
+         </nav>        
         </div>
-     </section>
-     <section class="news">
-      <div class="news__body container">
-       <h2 class="title medium lines">Новости</h2>
-       <ul class="news__list"></ul>
+       </div>
       </div>
      </section>
-     <section class="feedback">
-      <div class="feedback__body container">
-       <header class="feedback__header">
-        <h2 class="feedback__title">Обратный звонок</h2>
-        <span class="feedback__desc">Оставьте контакты и мы предвзоним вам в ближайшее время</span>
-       </header>
-       <footer class="feedback__footer">
-        <form class="feedback__form">
-         <div class="feedback__form-main">
-          <div class="feedback__form-row">
-           <div class="feedback__input-wrapper">
-            <label class="feedback__input-label">Имя*</label>
-            <input class="feedback__input" inputmode="text" type="text" placeholder="Имя" required>
-           </div>
-           <div class="feedback__input-wrapper">
-            <label class="feedback__input-label">Номер телефона*</label>
-            <input class="feedback__input" inputmode="tel" type="tel" placeholder="Номер телефона" required>
-           </div>        
-          </div>
-          <div class="feedback__input-wrapper">
-           <label class="feedback__input-label">Электронная почта</label>
-           <input class="feedback__input" inputmode="email" type="email" placeholder="Электронная почта">
-          </div>
-          <div class="feedback__input-wrapper">
-           <label class="feedback__input-label">Сообщение</label>
-           <textarea class="feedback__textarea feedback__input" placeholder="Сообщение"></textarea>
-          </div>
-         </div>
-         <button class="feedback__button button accent" type="submit">
-          <span>Отправить</span>
-         </button>
-        </form>
-       </footer>
+     <section class="order-completed">
+      <div class="order-completed__body container">
+       <div class="order-completed__content">
+        <h2 class="order-completed__title title medium">Ваш заказ выполнен!</h2>
+        <span class="order-completed__desc">
+         Спасибо за ваш заказ! Ваш заказ
+         обрабатывается и будет выполнен в течение 3-6
+         часов. Вы получите подтверждение по электронной
+         почте, когда ваш заказ будет выполнен.
+        </span>
+        <a class="order-completed__button button accent" href="#!">Продолжить покупки</a>
+       </div>
       </div>
      </section>
     </main>
@@ -293,7 +269,7 @@
          <li><a class="footer__link" href="index.html">Главная</a></li>
          <li><a class="footer__link" href="about.html">О нас</a></li>
          <li><a class="footer__link" href="#!">Контакты</a></li>
-         <li><span class="footer__link active">Блог</span></li>
+         <li><a class="footer__link" href="blog.html">Блог</a></li>
         </ul>
         <ul class="footer__list" data-footer-list-name="Контакты">
          <li>
@@ -330,6 +306,7 @@
    <script src="../src/libraries/simplebar/simplebar.min.js"></script>
    <script src="../src/libraries/tippy/popper.js"></script>
    <script src="../src/libraries/tippy/tippy.js"></script>
+   <script src="../src/libraries/swiper/swiper-bundle.min.js"></script>
    <script src="../src/icon-font/font-awesome/all.min.js"></script>
    <script type="module" src="../src/main.js"></script>
   </body>

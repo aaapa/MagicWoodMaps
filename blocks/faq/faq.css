@@ -1,0 +1,106 @@
+.faq {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px var(--padding);
+}
+
+.faq__body {
+  width: 100%;
+  display: flex;
+  gap: 115px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq__accordion {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.faq__accordion-item {
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.faq__accordion-top {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__accordion-column {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.faq__accordion-title {
+  color: var(--black);
+  font-weight: 500;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.faq__accordion-desc {
+  color: #939393;
+  max-width: 800px;
+  font-size: clamp(0.75rem, 5vw, 1.125rem);
+}
+
+.faq__accordion-button-more {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent);
+}
+
+@media (hover:hover) {
+  .faq__accordion-button-more:hover {
+    background-color: var(--accent);
+  }
+}
+
+.faq__accordion-button-more:active {
+  scale: var(--scale);
+}
+
+.faq__accordion-button-more::before {
+  content: "";
+  width: 20px;
+  height: 25px;
+  display: inline-block;
+  background-color: var(--accent);
+  -webkit-mask: url("../../src/imgs/faq/arrow-down.svg") center / cover no-repeat;
+  mask: url("../../src/imgs/faq/arrow-down.svg") center / cover no-repeat;
+}
+
+.faq__accordion-button-more.active::before {
+  -webkit-mask-image: url("../../src/imgs/faq/close.svg");
+  mask-image: url("../../src/imgs/faq/close.svg");
+}
+
+@media (hover:hover) {
+  .faq__accordion-button-more:hover::before {
+    background-color: whitesmoke;
+  }
+}
+
+.faq__accordion-content {
+  display: none;
+}
+
+.faq__accordion-content.active {
+  display: block;
+}
